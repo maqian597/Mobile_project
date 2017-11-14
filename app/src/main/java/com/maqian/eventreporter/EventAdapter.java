@@ -1,7 +1,6 @@
 package com.maqian.eventreporter;
 
 import android.content.*;
-import android.content.res.Resources;
 import android.view.*;
 import android.widget.*;
 
@@ -38,6 +37,7 @@ public class EventAdapter extends BaseAdapter {
     }
 
     @Override
+    //because getVire only return the view. no matter how many it is.
     public View getView(int position, View convertView, ViewGroup parent) {
         if (convertView == null) {
             LayoutInflater inflater = (LayoutInflater) context.getSystemService(
@@ -66,6 +66,7 @@ public class EventAdapter extends BaseAdapter {
         String imageName = r.getName();
         int resID = context.getResources().getIdentifier(imageName , "drawable", context.getPackageName());
         image.setImageResource(resID);
+
         return convertView;
     }
 }

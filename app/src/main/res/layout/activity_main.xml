@@ -1,4 +1,35 @@
 <?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fragment_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    tools:context="com.maqian.eventreporter.MainActivity">
+
+    <RelativeLayout
+        android:layout_width="300dp"
+        android:layout_height="match_parent"
+        android:id="@+id/event_container">
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/comment_container">
+    </RelativeLayout>
+
+
+</LinearLayout>
+<!--
+<fragment android:name="com.maqian.eventreporter.EventFragment"
+android:id="@+id/event_fragment"
+android:layout_height="wrap_content"
+android:layout_width="match_parent">
+</fragment>
+-->
+<!--
+    <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -9,5 +40,5 @@
         android:layout_height="wrap_content"
         android:layout_width="match_parent">
     </ListView>
-</RelativeLayout>
+</RelativeLayout> -->
 
